@@ -5,14 +5,17 @@
 #define LoRa_RST 14
 #define LoRa_DIO0 26
 
-#define LoRa_Frequency_TX 433775E3                    // TX Frequency
-#define LoRa_Frequency_RX 433775E3                    // RX Frequency
-#define LoRa_SpreadingFactor 12
-#define LoRa_SignalBandwidth 125000
-#define LoRa_CodingRate4 5
+#define LoRa_Frequency_TX 433775E3
+#define LoRa_Frequency_RX 433775E3
+#define LoRa_SpreadingFactor_RX 12
+#define LoRa_SignalBandwidth_RX 125000
+#define LoRa_CodingRate4_RX 5
+#define LoRa_SpreadingFactor_TX 12
+#define LoRa_SignalBandwidth_TX 125000
+#define LoRa_CodingRate4_TX 5
 #define LoRa_TxPower 20
 
-// TTGO T-Beam Pin
+// TTGO T-Beam Pin & Lora32
 #define LoRa_Oled_SDA 21                              // TTGO T-Beam Pin 21
 #define LoRa_Oled_SCL 22                              // TTGO T-Beam Pin 22
 #define LoRa_Oled_RST 16  
@@ -25,7 +28,6 @@
 
 #define Lora_Screen_Width 128                         // Screen Width  
 #define LoRa_Screen_Height 64                         // Screen Height
-#define Lora_Screen_Timeout 1                         // Screen Timeout in Minutes
 
 #define LoRa_str_call "NOCALL"                        // Call for Digipeater
 #define LoRa_str_Lat "0000.00N"                       // Latitude
@@ -33,10 +35,11 @@
 #define LoRa_str_Symbol "&"                           // Symbol
 #define LoRa_str_Overlay "L"                          // Overlay
 #define LoRa_str_Comment "LoRa Digipeater"            // Comment
-#define LoRa_str_Dest "APZAVR"                        // Destination Call
-#define LoRa_Timer_Bake 45                            // Baken Timer in Minutes
+#define LoRa_str_Dest "APZESP"                        // Destination Call
+#define LoRa_Timer_Bake 15                            // Baken Timer in Minutes
+#define LoRa_Timer_Telemetry 10                        // Telemetry Timer in Minutes
 
-#define LoRa_Serial_Baudrate 9600
+#define LoRa_Serial_Baudrate 115200
 
 #define LoRa_str_failed "Starting LoRa failed!"
 #define LoRa_str_ok "LoRa Initializing OK"
